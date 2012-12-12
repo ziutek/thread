@@ -1,5 +1,8 @@
 // Package thread is designed for manage OS thread parameters. Usually you
 // need to call runtime.LockOSThread before use it.
+//
+// Only String methods allocates memory (mainly because using of fmt package)
+// so don't use them when GC is disabled.
 package thread
 
 import (
