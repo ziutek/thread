@@ -24,7 +24,7 @@ func Current() Thread {
 }
 
 func (t Thread) String() string {
-	return fmt.Sprint("TID=", t.tid)
+	return fmt.Sprint(t.tid)
 }
 
 func (t Thread) SetSchedPolicy(policy sched.Policy, param *sched.Param) error {
